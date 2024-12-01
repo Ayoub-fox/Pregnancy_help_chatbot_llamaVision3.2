@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Pregnancy Guide</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="volume-button volume-up"></div>
+        <div class="volume-button volume-down"></div>
+        <div class="power-button"></div>
+        <div class="phone-screen">
+            <div class="welcome-container">
+                <div class="welcome-header">
+                    <h1>Pregnancy Guide</h1>
+                </div>
+                <div class="welcome-content">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Pregnancy Guide Logo" class="logo">
+                    <p class="welcome-text">Your personalized AI companion for a healthy pregnancy journey</p>
+                    <a href="{{ url_for('agents') }}" class="start-button">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
